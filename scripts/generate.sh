@@ -10,7 +10,7 @@ for e in $ENVIRONMENTS; do
 	  mkdir -p $e/$r/project$i
 cat<<-EOF >$e/$r/project$i/terragrunt.hcl
 terraform {
-  source = "../../..//modules/no-resource/"
+  source = "../../..//modules/no-resource"
 }
 inputs = {
   name = "data-$e-$r-project$i"
