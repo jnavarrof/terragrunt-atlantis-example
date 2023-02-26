@@ -12,9 +12,12 @@ cat<<-EOF >$e/$r/project$i/terragrunt.hcl
 terraform {
   source = "../../..//modules/no-resource"
 }
+inputs = {
+  name = "$e-$r-project$i"
+}
 EOF
 cat<<-EOF >$e/$r/project$i/main.tf
-inputs = {
+locals {
   name = "$e-$r-project$i"
 }
 EOF
