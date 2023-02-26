@@ -12,4 +12,4 @@ apply:
 
 .PHONY: clean
 clean:
-	rm -rf development production staging
+	rm -rf development production staging terragrunt.hcl
