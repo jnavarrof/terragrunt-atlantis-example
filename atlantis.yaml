@@ -1,0 +1,6 @@
+repos:
+    - id: /.*/
+      pre_workflow_hooks:
+        - run: terragrunt-atlantis-config generate --output atlantis.yaml --autoplan --parallel --create-workspace
+          description: Generating configs
+
