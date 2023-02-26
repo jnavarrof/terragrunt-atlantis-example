@@ -13,7 +13,7 @@ terraform {
   source = "../../..//modules/no-resource"
 }
 inputs = {
-  name = "data-$e-$r-project$i"
+  name = "input-data-$e-$r-project$i"
 }
 EOF
     done
