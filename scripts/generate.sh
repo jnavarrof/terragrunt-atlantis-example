@@ -6,14 +6,14 @@ REGIONS="eu-west-1"
 
 for e in $ENVIRONMENTS; do
   for r in $REGIONS; do
-    for i in $(seq 1 3); do
+    for i in $(seq 1 1); do
 	  mkdir -p $e/$r/project$i
 cat<<-EOF >$e/$r/project$i/terragrunt.hcl
 terraform {
   source = "../../..//modules/no-resource"
 }
 inputs = {
-  name = "input-data-$e-$r-project$i"
+  name = "data-$e-$r-project$i"
 }
 EOF
     done

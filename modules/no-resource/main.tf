@@ -13,7 +13,7 @@ resource "null_resource" "noop" {
   }
 }
 
-# resource "local_file" "foo" {
-#   content  = "${var.name}"
-#   filename = "${path.module}/${var.name}"
-# }
+resource "local_file" "foo" {
+  content  = "${var.name}"
+  filename = "${path.module}/${var.name}"
+}
