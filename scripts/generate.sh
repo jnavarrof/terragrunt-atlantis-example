@@ -19,6 +19,6 @@ inputs = {
 EOF
     done
   done
-done	
+done
 
-exit 
+exit
